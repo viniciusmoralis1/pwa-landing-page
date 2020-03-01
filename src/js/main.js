@@ -1,11 +1,12 @@
 if('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
-        navigator.serviceWorker.register('./sw.js').then((res) => {
-            console.log('Registrado o primeiro service worker', res);
+        navigator.serviceWorker.register('/sw.js').then((res) => {
+            console.log('Service Worker Registered', res);
         }).catch((err) => {
-            console.log('Erro: ', err);
+            console.log('Error: ', err);
         });
-        // navigator.serviceWorker.getRegistrations().then(function(registrations) { for(let registration of registrations) { registration.unregister() } })
-
+        navigator.serviceWorker.ready.then((registration) => {
+            console.log("Service Worker is ready");
+        });
     });
 }
