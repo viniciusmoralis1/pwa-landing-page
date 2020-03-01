@@ -30,7 +30,7 @@ module.exports = {
         use: [MiniCssExtractPlugin.loader, 'css-loader'],
       },
       {
-        test: /\.(woff(2)?|ttf|eot|svg|gif|png|jpe?g)$/,
+        test: /\.(woff(2)?|ttf|ico|eot|svg|gif|png|jpe?g)$/,
         loader: 'url-loader',
         options: {
           limit: 60,
