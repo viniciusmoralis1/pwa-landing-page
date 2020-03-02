@@ -35,9 +35,9 @@ module.exports = {
         use: [ {
           loader: 'url-loader',
           options: {
-            // fallback: 'file-loader',
-            publicPath: '/src/assets/img',
-            outputPath: '/src/assets/img',
+            fallback: 'file-loader',
+            publicPath: './img',
+            outputPath: './img',
             name: '[name].[ext]',
           }
         }],
@@ -54,7 +54,7 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      title: 'Lorem Ipsum Front-end Engineer',
+      title: 'PWA Portfolio',
       template: './src/index.html',
       favicon: false,
     }),
