@@ -27,18 +27,20 @@ module.exports = {
       },
       {
         test: /\.css$/,
+        exclude: /(node_modules)/,
         use: [MiniCssExtractPlugin.loader, 'css-loader'],
       },
       {
-        test: /\.(woff(2)?|ttf|ico|eot|svg|gif|png|jpe?g)$/,
-        loader: 'url-loader',
-        options: {
-          limit: 60,
-          fallback: 'file-loader',
-          publicPath: './img',
-          outputPath: './img',
-          name: '[name].[ext]',
-        },
+        test: /\.(woff(2)?|ico|svg|gif|png|jpe?g)$/,
+        use: [ {
+          loader: 'url-loader',
+          options: {
+            // fallback: 'file-loader',
+            publicPath: '/src/assets/img',
+            outputPath: '/src/assets/img',
+            name: '[name].[ext]',
+          }
+        }],
       },
     ],
   },
