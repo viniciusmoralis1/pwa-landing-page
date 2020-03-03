@@ -54,7 +54,7 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      title: 'PWA Portfolio',
+      title: 'PWA Landing Page',
       template: './src/index.html',
       favicon: false,
     }),

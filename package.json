@@ -1,7 +1,7 @@
 {
-  "name": "pwa-portfolio",
+  "name": "pwa-landing-page",
   "version": "1.0.0",
-  "description": "Portfolio made to implement PWA",
+  "description": "Landing Page made to implement PWA",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,19 +9,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ViniciusMoralis1/pwa-portfolio.git"
+    "url": "https://github.com/ViniciusMoralis1/pwa-landing-page.git"
   },
   "keywords": [
     "webpack",
     "pwa",
-    "portfolio"
+    "landing-page"
   ],
   "author": "Vinicius Moralis",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ViniciusMoralis1/pwa-portfolio/issues"
+    "url": "https://github.com/ViniciusMoralis1/pwa-landing-page/issues"
   },
-  "homepage": "https://github.com/ViniciusMoralis1/pwa-portfolio#readme",
+  "homepage": "https://github.com/ViniciusMoralis1/pwa-landing-page#readme",
   "devDependencies": {
     "@babel/preset-env": "^7.8.6",
     "babel-loader": "^8.0.6",
